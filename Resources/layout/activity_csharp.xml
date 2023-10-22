@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mylinear"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layoutDirection="rtl"
+        android:background="@drawable/toolbar_back"
+        app:title="آموزش سی شارپ مقدماتی تا متوسط"
+        app:titleTextColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView1"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView1"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت اول"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle1"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView1"
+                        android:text="مقدمه و آشنایی با مدرس"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton1"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton1"
+                        android:id="@+id/downloadbutton1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView2"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت دوم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle2"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView2"
+                        android:text="آشنایی با سی شارپ"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton2"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:id="@+id/downloadbutton2"
+                        android:layout_toLeftOf="@+id/materialButton2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView3"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت سوم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle3"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView3"
+                        android:text="نصب IDE ویژوال استودیو 2022"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton3"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:id="@+id/downloadbutton3"
+                        android:layout_toLeftOf="@+id/materialButton3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView4"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView4"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت چهارم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle4"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView4"
+                        android:text="ایجاد اولین پروژه کنسولی"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton4"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:id="@+id/downloadbutton4"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView5"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView5"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت پنجم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle5"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView5"
+                        android:text="متغیر، عملگر، تبدیل انواع داده ها"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton5"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton5"
+                        android:id="@+id/downloadbutton5"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView6"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView6"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت ششم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle6"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView6"
+                        android:text="ساختار های شرطی if else"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton6"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton6"
+                        android:id="@+id/downloadbutton6"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView7"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت هفتم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle7"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView7"
+                        android:text="ساختار شرطی Switch"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton7"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton7"
+                        android:id="@+id/downloadbutton7"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView8"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت هشتم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle8"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView8"
+                        android:text="پرکاربرد ترین توابع استرینگ"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton8"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton8"
+                        android:id="@+id/downloadbutton8"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView9"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView9"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت نهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle9"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView9"
+                        android:text="آشنایی با حلقه Do - While"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton9"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton9"
+                        android:id="@+id/downloadbutton9"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView10"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت دهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle10"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView10"
+                        android:text="آشنایی با حلقه For"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton10"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton10"
+                        android:id="@+id/downloadbutton10"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView11"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView11"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت یازدهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle11"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView11"
+                        android:text="آشنایی با حلقه While"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton11"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton11"
+                        android:id="@+id/downloadbutton11"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView12"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت دوازدهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle12"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView12"
+                        android:text="حلقه های تو در تو در سی شارپ"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton12"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton12"
+                        android:id="@+id/downloadbutton12"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView13"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت سیزدهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle13"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView13"
+                        android:text="استفاده از if در داخل حلقه"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton13"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton13"
+                        android:id="@+id/downloadbutton13"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView14"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView14"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت چهاردهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle14"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView14"
+                        android:text="کالکشن ها و لیست در سی شارپ"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton14"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton14"
+                        android:id="@+id/downloadbutton14"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView15"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView15"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت پانزدهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle15"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView15"
+                        android:text="حلقه foreach"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton15"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton15"
+                        android:id="@+id/downloadbutton15"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView16"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="18.0dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="2dp"
+                app:contentPadding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="140.0dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:padding="5dp"
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:layout_alignParentLeft="true"
+                        android:layout_width="110.5dp"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="17dp"
+                        android:id="@+id/textView16"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:text="قسمت پانزدهم"
+                        android:layout_marginTop="8.0dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:id="@+id/textTitle16"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView16"
+                        android:text="قسمت پایانی توضیحات مهم"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/materialButton16"
+                        android:layout_marginRight="9.5dp"
+                        android:text="پخش آنلاین" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:textSize="12dp"
+                        android:textColor="@android:color/white"
+                        app:cornerRadius="15dp"
+                        android:layout_toLeftOf="@+id/materialButton16"
+                        android:id="@+id/downloadbutton16"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:text="دانلود" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

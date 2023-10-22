@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myrelative">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_alignParentTop="true"
+        android:id="@+id/toolbar1"
+        android:layoutDirection="rtl"
+        android:background="@drawable/toolbar_back"
+        app:title="درباره برنامه"
+        app:titleTextColor="@android:color/black"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"/>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar1"
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView1"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_height="42.5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/ModeCard1"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="#009dff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="7.0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="0.0dp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@+id/ModeCard1"
+                    android:layout_centerVertical="true"
+                    android:text="LEARN TO SHARE"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.0dp" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView2"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ModeCard2"
+                    android:layout_centerVertical="true"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="#009dff"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="7.0dp"
+                    android:layout_height="300dp"
+                    android:layout_marginRight="0.0dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:textColor="@android:color/black"
+                    android:text="تصمیم گرفته ایم هرچیزی که یاد گرفته ایم به اشتراک عموم بگذاریم و این نرم افزار را منتشر کرده ایم تا برنامه نویسی را بصورت رایگان در اختیار هم وطنان قرار دهیم.
+ اپلیکیشنی بسیار مفید از لحاظ آموزشی برای گوشی های اندروید است
+ چه یک برنامه نویس تازه کار باشید یا چه یک مدرس حرفه ای میتوانید با ما همکاری کنید
+ و دوره های آموزشی خود را بصورت رایگان در برنامه لرن تو شر قرار دهید کافی است از درون برنامه با ما ارتباط برقرار کنید.
+ما همیشه سعی میکنیم بهترین هارا خلق کنیم تا در اختیار عموم و برنامه نویسان کشور قرار دهیم!"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_centerInParent="true" />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+          <androidx.cardview.widget.CardView
+            android:id="@+id/cardView3"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            app:cardBackgroundColor="@android:color/white"
+            android:layout_height="42.5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/ModeCard3"
+                    android:layout_centerVertical="true"
+                    app:cardCornerRadius="0dp"
+                    app:cardElevation="10dp"
+                    app:cardBackgroundColor="#009dff"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="7.0dp"
+                    android:layout_height="42.5dp"
+                    android:layout_marginRight="0.0dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:textColor="@android:color/black"
+                    android:layout_toRightOf="@id/ModeCard3"
+                    android:layout_centerVertical="true"
+                    android:text="VERSION : 5.0.0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="9.5dp"  />
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

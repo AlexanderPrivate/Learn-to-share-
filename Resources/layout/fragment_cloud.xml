@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:layout_marginRight="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="12sp"
+        android:layout_marginBottom="90sp"
+        android:id="@+id/list_show"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <com.google.android.material.button.MaterialButton
+     android:visibility="invisible"
+        android:id="@+id/Add"
+        android:layout_gravity="bottom|end"
+        android:text="اضافه کردن کلود جدید"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="256.3dp"
+        android:layout_marginRight="29dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:visibility="invisible"
+        android:id="@+id/Delete"
+        android:text="حذف کلود ( با کد )"
+        android:layout_gravity="bottom|end"
+               android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="211.0dp"
+        android:layout_marginRight="29.0dp" />
+
+    <com.google.android.material.button.MaterialButton
+         android:visibility="invisible"
+        android:id="@+id/DeleteAll"
+        android:text="حذف همه کلود ها"
+        android:layout_gravity="bottom|end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="164.4dp"
+        android:layout_marginRight="29.0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:tint="@android:color/white"
+        android:src="@drawable/fab_icon"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="103.3dp"
+        android:layout_marginRight="19.7dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

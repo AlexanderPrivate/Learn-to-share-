@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="56.0dp">
+
+        <ImageButton
+            android:background="@android:color/transparent"
+            android:src="@drawable/backicon_layerlist"
+            android:id="@+id/imageButton1"
+            android:layout_alignParentLeft="true"
+            android:layout_width="42.0dp"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:id="@+id/editText1"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:hint="فقط اسم زبان : سی شارپ"
+            android:layout_margin="4dp"
+            android:background="@drawable/search_light_back"
+            android:layout_toRightOf="@+id/imageButton1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

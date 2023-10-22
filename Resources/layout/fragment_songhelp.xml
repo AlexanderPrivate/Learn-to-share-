@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:text=" قسمت مورد نظر را به برنامه جدیداً اضافه نموده‌ایم، که شامل مجموعه‌ ای از آهنگ ‌های آنلاین برای برنامه ‌نویسان در آن قرار داده‌ایم. این صفحه فقط برای اطلاع است!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89.0dp" />
+
+    <CheckBox
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:id="@+id/checkBox1"
+        android:text="متوجه شدم و این صفحه رو دیگر نمایش نده."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/materialButton1"
+        app:cornerRadius="25dp"
+        android:layout_below="@+id/checkBox1"
+        android:text="ورود"
+        android:layout_width="206.0dp"
+        android:layout_height="52.0dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17.0dp" />
+
+</RelativeLayout>

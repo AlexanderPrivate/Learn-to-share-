@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:id="@+id/SearchBar_Relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/view1"
+            android:background="#F4F4F4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup1"
+            android:layoutDirection="rtl"
+            app:singleSelection="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent"
+            android:layout_marginTop="14.0dp">
+
+            <com.google.android.material.chip.Chip
+                android:layout_marginRight="8dp"
+                android:textSize="16dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:id="@+id/chip1"
+                android:textAlignment="center"
+                android:text="دوره ها"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:textSize="16dp"
+                android:layout_margin="3dp"
+                android:id="@+id/chip2"
+                android:textAlignment="center"
+                android:text="W3 SCHOOL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.chip.Chip
+                android:textSize="16dp"
+                android:id="@+id/chip3"
+                android:layout_margin="3dp"
+                android:textAlignment="center"
+                android:text="آهنگ ها"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/chipGroup1"
+            android:id="@+id/cardView11"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="1dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="48.0dp"
+            android:layout_marginTop="12.5dp"
+            android:layout_marginBottom="13.5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView_search"
+                    android:text="جستجو"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10.5dp" />
+
+                <ImageView
+                    android:id="@+id/ImageSearch"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/search_lighttheme"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"/>
+
+
+            </RelativeLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_below="@+id/SearchBar_Relative"
+        android:id="@+id/frameLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="22.0dp"
+        android:layout_marginLeft="22.0dp"
+        android:layout_marginBottom="15.5dp"
+        app:itemIconSize="22dp"
+        app:labelVisibilityMode="labeled"
+        android:background="@drawable/bottom_radius"
+        app:itemIconTint="@drawable/bottom_blue"
+        app:itemTextColor="@drawable/bottom_blue"
+        app:menu="@menu/bottom_menu"
+        android:id="@+id/bottomNavigationView1"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        app:elevation="0dp"
+        android:layout_height="64.5dp"/>
+
+
+</RelativeLayout>

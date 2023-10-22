@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="MyBlackColor">#141414</color>
+    <color name="MyBlueLightBack">#f5fcff</color>
+	<color name="MyLightGray">#f7f7f7</color>
+    <color name="CardBackGround">#f7ad00</color>
+	<color name="MyLightAparatBack">#fffafc</color>
+  
+  
+  
+</resources>

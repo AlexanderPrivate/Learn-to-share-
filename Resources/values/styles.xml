@@ -1,0 +1,85 @@
+<resources>
+
+	<style name="LightBlue" parent="Theme.MaterialComponents.Light.DarkActionBar" >
+		<item name="colorPrimaryDark">@android:color/transparent</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:navigationBarColor">#e3e3e3</item>
+		<item name="android:windowLightNavigationBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="colorAccent">#009dff</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@color/MyBlueLightBack</item>
+		<item name="android:textColor">#8a8a8a</item>
+		<item name="chipBackgroundColor">@android:color/holo_blue_dark</item>
+		<item name="android:fontFamily">@font/iransans</item>
+	</style>
+
+	<style name="LightGray"  parent="Theme.MaterialComponents.Light.DarkActionBar">
+		<item name="colorAccent">#363636</item>
+		<item name="colorPrimaryDark">@android:color/transparent</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:navigationBarColor">#e3e3e3</item>
+		<item name="android:windowLightNavigationBar">false</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@color/MyLightGray</item>
+		<item name="android:textColor">#8a8a8a</item>
+		<item name="android:fontFamily">@font/iransans</item>
+	</style>
+
+	<style name="LightAparat" parent="Theme.MaterialComponents.Light.DarkActionBar" >
+		<item name="colorAccent">#ED145B</item>
+		<item name="colorPrimaryDark">@android:color/transparent</item>
+		<item name="android:windowLightStatusBar">true</item>
+		<item name="android:navigationBarColor">#e3e3e3</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@color/MyLightAparatBack</item>
+		<item name="android:windowLightNavigationBar">false</item>
+		<item name="android:colorBackground">@android:color/white</item>
+		<item name="android:textColor">#8a8a8a</item>
+		<item name="android:fontFamily">@font/iransans</item>
+	</style>
+
+	<style name="DarkBlue" parent="Theme.MaterialComponents.Light.DarkActionBar" >
+		<item name="colorAccent">#009dff</item>
+		<item name="colorPrimaryDark">#141414</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:navigationBarColor">@android:color/black</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@color/MyBlackColor</item>
+		<item name="android:colorBackground">#363636</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:fontFamily">@font/iransans</item>
+	</style>
+
+	<style name="DarkGray" parent="Theme.MaterialComponents.Light.DarkActionBar" >
+		<item name="colorAccent">#363636</item>
+		<item name="colorPrimaryDark">#141414</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:navigationBarColor">@android:color/black</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@color/MyBlackColor</item>
+		<item name="android:colorBackground">#363636</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:fontFamily">@font/iransans</item>
+	</style>
+
+
+	<style name="DarkAparat" parent="Theme.MaterialComponents.Light.DarkActionBar" >
+		<item name="colorAccent">#ED145B</item>
+		<item name="colorPrimaryDark">#141414</item>
+		<item name="android:windowLightStatusBar">false</item>
+		<item name="android:navigationBarColor">@android:color/black</item>
+		<item name="windowNoTitle">true</item>
+		<item name="windowActionBar">false</item>
+		<item name="android:windowBackground">@color/MyBlackColor</item>
+		<item name="android:colorBackground">#363636</item>
+		<item name="android:textColor">@android:color/white</item>
+		<item name="android:fontFamily">@font/iransans</item>
+	</style>
+
+
+</resources>

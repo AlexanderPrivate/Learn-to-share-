@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myrelative">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:text="اضافه کردن کلود"
+        android:layout_marginTop="5sp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_marginTop="1sp"
+        android:layout_below="@+id/textView1"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"/>
+
+    <EditText
+        android:textSize="14sp"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:layout_below="@+id/view1"
+        android:id="@+id/title_edit"
+        android:hint="عنوان"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dp"
+        android:inputType="text" />
+
+     <EditText
+        android:textSize="14sp"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        android:layout_below="@+id/title_edit"
+        android:id="@+id/title_Des"
+        android:hint="توضیحات"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15.0dp"
+        android:inputType="text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Sumbit"
+        android:layout_below="@+id/title_Des"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10sp"
+        android:text="ثبت کلود جدید" />
+
+
+</RelativeLayout>

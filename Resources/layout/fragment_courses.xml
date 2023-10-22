@@ -1,0 +1,1192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mylinear"
+    android:alpha="0"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView1">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView20"
+                app:cardElevation="2dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard20"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_git"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView37"
+                        android:text="آموزش گیت و گیتهاب"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView38"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="گیت یک سیستم کنترل نسخه محبوب است که به شما امکان می‌دهد تغییرات در پروژه‌های نرم‌افزاری را پیگیری کنید و کنترل کنید."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView37"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton20" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton20"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+              <androidx.cardview.widget.CardView
+                android:id="@+id/cardView19"
+                app:cardElevation="2dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard19"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_xamarinandroid"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView35"
+                        android:text="آموزش زامارین اندروید"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView36"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text=" یک چارچوب توسعه نرم‌افزار موبایل است که به توسعه‌دهندگان امکان می‌دهد با استفاده از زبان برنامه‌نویسی سی شارپ، برنامه‌های اندروید را توسعه دهند."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView35"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton19" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton19"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+                   <androidx.cardview.widget.CardView
+                android:id="@+id/cardView18"
+                app:cardElevation="2dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard18"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_javascript"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView33"
+                        android:text="آموزش جاوا اسکریپت"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView34"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="جاوا اسکریپت یک زبان برنامه‌نویسی قدرتمند و پرکاربرد است که برای توسعه وب سایت‌ها و برنامه‌های مرورگری استفاده می‌شود."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView33"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton18" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton18"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                android:id="@+id/cardView17"
+                app:cardElevation="2dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard17"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_xamarinform"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView31"
+                        android:text="آموزش زامارین فرم"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView32"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="یک فریمورک چند پلتفرمی برای توسعه برنامه‌های موبایل و اپل و ویندوز فون است با استفاده از کدنویسی یکبار برای هر سه پلتفرم میتوانید خروجی بگیرید"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView31"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton17" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton17"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                android:id="@+id/cardView16"
+                app:cardElevation="2dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard16"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_htmlcss"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView29"
+                        android:text="آموزش html و css"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView30"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="اچ تی ام ال یک زبان نشانه گذاری برای اسکلت بندی وب سایت، و سی اس اس یک زبان استایل دهی برای ظاهر صفحات وب  استفاده میشود."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView29"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton16" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton16"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                app:cardElevation="2dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard13"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_9"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView23"
+                        android:text="آموزش سریع پایتون در 2 ساعت!"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView24"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="این یک آموزش تک قسمتی است که در طی دو ساعت خیلی سریع پایتون رو یاد میگیرید با شروع این دوره به راحتی وا رد دنیای پایتون شوید!"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView23"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton13" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton13"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+           
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView10"
+                app:cardElevation="1dp"
+                android:padding="8dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard10"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_6"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView19"
+                        android:text="آموزش هوش مصنوعی"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView20"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="هوش مصنوعی علم شبیه سازی شده هوش انسان در ماشین هاست و میتواند مانند انسان فکر کند، حل مسئله انجام دهد، و حتی انسان هارا تقلید کند."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView19"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton11" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton10"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:padding="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:id="@+id/ModeCard2"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/gunaframework_image"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView3"
+                        android:text="آموزش ویژوال استودیو کد"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView4"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="ویژوال استودیو کد یک ویرایشگر متن باز است که با آن هر برنامه ای میتوان با هر زبانی نوشت در این دوره به یادگیری محیط آن میپردازیم."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView3"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton2" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton2"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:padding="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard3"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/csharp_image"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView5"
+                        android:text="آموزش برنامه نویسی موبایل در Aide"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView6"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="با شروع این دوره شما قادر خواهید بود در گوشی اندروید خود برنامه های اندرویدی بسازید و در فروشگاه ها منتشر کنید !"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView5"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton3" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton3"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:padding="8dp"
+                android:id="@+id/cardView4"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard4"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/windowform_image"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView7"
+                        android:text="متریال دیزاین در اندروید"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView8"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="متریال دیزاین طراحی اپلیکیشن های اندرویدی است یعنی در این دوره به شما اصول طراحی اپلیکیشن یاد داده خواهد شد و شما را وارد دنیای جذاب طراحی اپلیکیشن میکنیم!"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView7"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton4" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton4"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:padding="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/cardView5"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard5"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_5"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView9"
+                        android:text="الگوریتم و حل مسئله "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView10"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="الگوریتم روشی برای حل مسئله است در این دوره شمارا وارد دنیای جذاب حل مسئله میکنیم این دوره برای همه بسیار مفید است."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView9"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton5" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton5"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:padding="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:id="@+id/cardView6"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard6"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_last1"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView11"
+                        android:text="دوره سی شارپ مقدماتی تا متوسط"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView12"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView11"
+                        android:layout_marginTop="5.0dp"
+                        android:text="سی شارپ یک زبان مدرن ، شی گرا ، چند منظوره است که با یادگیری آن میتوان هر برنامه ای برای هر دستگاهی نوشت و یادگیری آن هم بسیار آسان است!"
+                        android:layout_above="@id/materialButton6" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton6"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView7"
+                android:padding="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="5.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard7"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_3"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView13"
+                        android:text="دوره جاوا مقدماتی تا متوسط"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView14"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="با شروع این شما قادر به ورود به بازار کار با زبان جاوا خواهید شد این زبان در برنامه نویسی اندروید و ... کاربرد بسیار زیادی دارد."
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView13"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton7" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton7"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView8"
+                android:padding="8dp"
+                app:cardElevation="1dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_width="match_parent"
+                android:layout_height="225.0dp"
+                android:layout_marginTop="11.5dp"
+                android:layout_marginBottom="100.0dp">
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ModeCard8"
+                        app:cardCornerRadius="2dp"
+                        android:layout_marginRight="0dp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        app:cardBackgroundColor="#009dff"
+                        android:layout_width="5dp"
+                        android:layout_height="35dp"/>
+
+                    <ImageView
+                        android:src="@drawable/image_last2"
+                        android:scaleType="fitCenter"
+                        android:padding="10dp"
+                        android:layout_width="163.5dp"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="true"/>
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"
+                        android:id="@+id/textView15"
+                        android:text="آموزش ویندوز فرم"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_marginTop="32.5dp" />
+
+
+                    <TextView
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp"
+                        android:id="@+id/textView16"
+                        android:layout_width="193.0dp"
+                        android:padding="3dp"
+                        android:text="ویندوز فرم تکنولوژی ساخت برنامه های گرافیکی تحت دسکتاپ است این تکنولوژی به شما کمک میکند تا برنامه های ویندوزی بسازید!"
+                        android:layout_marginRight="13.0dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textView15"
+                        android:layout_marginTop="5.0dp"
+                        android:layout_above="@id/materialButton8" />
+
+                    <com.google.android.material.button.MaterialButton
+                        app:iconSize="17dp"
+                        app:iconTint="@android:color/white"
+                        app:icon="@drawable/play"
+                        android:textSize="12dp"
+                        android:id="@+id/materialButton8"
+                        app:cornerRadius="20dp"
+                        android:layout_marginRight="33.5dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_width="121.0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0.0dp"
+                        android:text="شروع دوره"
+                        android:layout_marginBottom="6.0dp" />
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
