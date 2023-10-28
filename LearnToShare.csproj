@@ -95,6 +95,7 @@
     <Compile Include="Classes\themes.cs" />
     <Compile Include="Cloud_DataBase\Table_Cloud.cs" />
     <Compile Include="Dialogs\add_cloud_Fragment.cs" />
+    <Compile Include="Dialogs\delete_all_Fragment.cs" />
     <Compile Include="Dialogs\delete_cloud_Fragment.cs" />
     <Compile Include="Fragments\Fragment_cloud.cs" />
     <Compile Include="Fragments\Fragment_courses.cs" />
@@ -557,6 +558,11 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\fragment_deletecloud.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragment_deleteall.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
