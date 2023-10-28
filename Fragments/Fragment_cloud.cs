@@ -50,10 +50,11 @@ namespace LearnToShare.Fragments
 
         private void Button_DeleteAll_Click(object sender, EventArgs e)
         {
-            var connection = new SQLiteConnection(_Path);
             floatingAction.PerformClick();
-            connection.DeleteAll<Table_Cloud>();
-            ShowData(connection);
+            DialogFragment delete_cloud = new Dialogs.delete_all_Fragment();
+            var Transaction = FragmentManager.BeginTransaction();
+            delete_cloud.Cancelable = false;
+            delete_cloud.Show(Transaction, "Delete All");
         }
         private void Button_Delete_Click(object sender, EventArgs e)
         {

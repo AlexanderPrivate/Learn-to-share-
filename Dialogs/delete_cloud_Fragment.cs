@@ -41,6 +41,7 @@ namespace LearnToShare.Dialogs
 
             if (Activity_main.theme_number == 0 || Activity_main.theme_number == 1 || Activity_main.theme_number == 4)
             {
+                Code_Edit.SetTextColor(Color.White);
                 relative.SetBackgroundColor(Color.Rgb(30, 30, 30));
                 Code_Edit.SetHintTextColor(Color.Rgb(235, 235, 235));
             }
