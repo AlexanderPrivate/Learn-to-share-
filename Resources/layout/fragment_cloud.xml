@@ -1,58 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ListView
-        android:layout_marginRight="10sp"
-        android:layout_marginLeft="10sp"
-        android:layout_marginTop="12sp"
-        android:layout_marginBottom="90sp"
-        android:id="@+id/list_show"
+
+    <EditText
+        android:textSize="13sp"
+        android:background="@drawable/search_light_back"
+        android:layout_margin="20sp"
+        android:padding="10sp"
+        android:hint="جستجو با عنوان ،کد و.."
+        android:id="@+id/editText1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="50.5dp"/>
+
+
+    <ListView
+        android:layout_below="@+id/editText1"
+        android:id="@+id/list_show"
+        android:layout_above="@+id/fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16.0dp" />
 
 
     <com.google.android.material.button.MaterialButton
-     android:visibility="invisible"
+        android:visibility="invisible"
         android:id="@+id/Add"
-        android:layout_gravity="bottom|end"
         android:text="اضافه کردن کلود جدید"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="256.3dp"
-        android:layout_marginRight="29dp" />
+        android:layout_above="@+id/Delete"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="7sp"
+        app:cornerRadius="20sp"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:visibility="invisible"
         android:id="@+id/Delete"
         android:text="حذف کلود ( با کد )"
-        android:layout_gravity="bottom|end"
-               android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="211.0dp"
-        android:layout_marginRight="29.0dp" />
+        android:layout_marginBottom="2sp"
+        android:layout_above="@+id/DeleteAll"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        app:cornerRadius="20sp"
+        android:layout_marginRight="40sp"
+        android:layout_height="wrap_content" 
+        />
 
     <com.google.android.material.button.MaterialButton
-         android:visibility="invisible"
+        android:visibility="invisible"
         android:id="@+id/DeleteAll"
         android:text="حذف همه کلود ها"
-        android:layout_gravity="bottom|end"
+        android:layout_marginRight="40sp"
+        app:cornerRadius="20sp"
+        android:layout_marginBottom="10sp"
         android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_above="@+id/fab"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="164.4dp"
-        android:layout_marginRight="29.0dp" />
+ />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_alignParentBottom="true"
         android:tint="@android:color/white"
         android:src="@drawable/fab_icon"
         android:id="@+id/fab"
+        android:layout_marginRight="40sp"
+        android:layout_marginBottom="109.0dp"
+        android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="103.3dp"
-        android:layout_marginRight="19.7dp" />
+        android:layout_height="wrap_content" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</RelativeLayout>
