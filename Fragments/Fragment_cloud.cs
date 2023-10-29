@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using System.IO;
 using Android.App;
+using Android.Content.Res;
+using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
 using Google.Android.Material.Button;
 using Google.Android.Material.FloatingActionButton;
+using LearnToShare.Classes;
 using LearnToShare.Cloud_DataBase;
 using SQLite;
 using Xamarin.Essentials;
@@ -20,7 +23,9 @@ namespace LearnToShare.Fragments
         FloatingActionButton floatingAction;
         MaterialButton Button_Add, Button_Delete, Button_DeleteAll;
         public static ListView List_Show;
-        private string _Path = Path.Combine(FileSystem.AppDataDirectory, "Cloud.db3");
+        private string _Path = System.IO.Path.Combine(FileSystem.AppDataDirectory, "Cloud.db3");
+        EditText SearchBox;
+        TextView title;
 
         [Obsolete]
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
@@ -29,6 +34,8 @@ namespace LearnToShare.Fragments
 
             floatingAction = (FloatingActionButton)This_View.FindViewById(Resource.Id.fab);
 
+            SearchBox = (EditText)This_View.FindViewById(Resource.Id.edit_search);
+            title = (TextView)This_View.FindViewById(Resource.Id.textView1);
             Button_Add = (MaterialButton)This_View.FindViewById(Resource.Id.Add);
             Button_Delete = (MaterialButton)This_View.FindViewById(Resource.Id.Delete);
             Button_DeleteAll = (MaterialButton)This_View.FindViewById(Resource.Id.DeleteAll);
@@ -38,14 +45,57 @@ namespace LearnToShare.Fragments
 
             connection.CreateTable<Table_Cloud>();
 
-
             ShowData(connection);
+
+            if (themes.ColorNumber == 0 || themes.ColorNumber == 1 || themes.ColorNumber == 4) // "حالت شب "
+            {
+                SearchBox.SetBackgroundResource(Resource.Drawable.search_dark_back);
+                SearchBox.SetHintTextColor(ColorStateList.ValueOf(Color.Rgb(230, 230, 230)));
+                SearchBox.SetTextColor(Color.White);
+            }
+            else if (themes.ColorNumber == 2 || themes.ColorNumber == 3 || themes.ColorNumber == 5)  //  "حالت روز "
+            {
+                SearchBox.SetBackgroundResource(Resource.Drawable.search_light_back);
+                SearchBox.SetHintTextColor(ColorStateList.ValueOf(Color.Rgb(70, 70, 70)));
+                SearchBox.SetTextColor(Color.Black);
+            }
+
+
 
             floatingAction.Click += FloatingAction_Click;
             Button_Add.Click += Button_Add_Click;
             Button_Delete.Click += Button_Delete_Click;
             Button_DeleteAll.Click += Button_DeleteAll_Click;
+            SearchBox.TextChanged += SearchBox_TextChanged;
+
             return This_View;
+        }
+
+        private void SearchBox_TextChanged(object sender, Android.Text.TextChangedEventArgs e)
+        {
+            int Id_ = 0;
+            try
+            {
+                Id_ = Convert.ToInt32(SearchBox.Text);
+            }catch(Exception) { }
+            var connection = new SQLiteConnection(_Path);
+
+            var Query = connection.Table<Table_Cloud>().Where(x => x.Title.Contains(SearchBox.Text) || x.Id == Id_ || x.Descreption.Contains(SearchBox.Text)).ToList();
+
+            if (Query != null)
+            {
+                List<string> Data = new List<string>();
+
+                foreach (var item in Query)
+                {
+                    Data.Add($" عنوان کلود: {item.Title}\n توضیحات: {item.Descreption}\n کد کلود: {item.Id}");
+                }
+
+                ArrayAdapter<string> adapter = new ArrayAdapter<string>(This_View.Context, Resource.Layout.item_cloud,
+                    Data);
+
+                List_Show.Adapter = adapter;
+            }
         }
 
         private void Button_DeleteAll_Click(object sender, EventArgs e)
