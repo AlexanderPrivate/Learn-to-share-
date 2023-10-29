@@ -4,7 +4,6 @@ using Android.Graphics;
 using Android.OS;
 using Android.Views;
 using Android.Widget;
-using Google.Android.Material.BottomSheet;
 using Google.Android.Material.Button;
 using LearnToShare.Activities;
 using System;
@@ -25,7 +24,6 @@ namespace LearnToShare.Fragments
         string url_4, url_3;
         Thread thread;
         LinearLayout linear;
-        AndroidX.AppCompat.Widget.Toolbar toolbar;
         AndroidX.CardView.Widget.CardView card1, card2, card3, card4;
 
         [Obsolete]
@@ -40,9 +38,6 @@ namespace LearnToShare.Fragments
             This_View = inflater.Inflate(Resource.Layout.fragment_manage, container, false);
             linear = (LinearLayout)This_View.FindViewById(Resource.Id.linearLayout1);
 
-            linear.Animate().Alpha(1f).SetDuration(600).Start();
-
-            toolbar = (AndroidX.AppCompat.Widget.Toolbar)This_View.FindViewById(Resource.Id.toolbar1);
             card1 = (AndroidX.CardView.Widget.CardView)This_View.FindViewById(Resource.Id.cardView1);
             card2 = (AndroidX.CardView.Widget.CardView)This_View.FindViewById(Resource.Id.cardView2);
             card3 = (AndroidX.CardView.Widget.CardView)This_View.FindViewById(Resource.Id.cardView3);
@@ -95,8 +90,6 @@ namespace LearnToShare.Fragments
                 card2.SetCardBackgroundColor(Color.Rgb(30, 30, 30));
                 card4.SetCardBackgroundColor(Color.Rgb(30, 30, 30));
 
-                toolbar.SetBackgroundResource(Resource.Drawable.toolbar_back_dark);
-                toolbar.SetTitleTextColor(Color.White);
             }
             else if (Activity_main.theme_number == 2 || Activity_main.theme_number == 3 || Activity_main.theme_number == 5)  // 2 ==    "حالت روز"
             {
@@ -114,8 +107,6 @@ namespace LearnToShare.Fragments
                         txt.SetTextColor(Color.Black);
                     }
                 }
-                toolbar.SetBackgroundResource(Resource.Drawable.toolbar_back);
-                toolbar.SetTitleTextColor(Color.Black);
             }
 
 

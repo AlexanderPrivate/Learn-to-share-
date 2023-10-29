@@ -37,12 +37,12 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
     <AndroidLinkMode>None</AndroidLinkMode>
-    <EmbedAssembliesIntoApk>true</EmbedAssembliesIntoApk>
+    <EmbedAssembliesIntoApk>false</EmbedAssembliesIntoApk>
     <MandroidI18n />
     <AndroidSupportedAbis>armeabi-v7a</AndroidSupportedAbis>
     <AndroidKeyStore>false</AndroidKeyStore>
     <BundleAssemblies>false</BundleAssemblies>
-    <AndroidUseAapt2>false</AndroidUseAapt2>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>false</DebugSymbols>
@@ -88,6 +88,7 @@
     <Compile Include="Adapters\java_script_adapter.cs" />
     <Compile Include="Adapters\xamarin_android_adapter.cs" />
     <Compile Include="Adapters\xamarin_form_adapter.cs" />
+    <Compile Include="CHAT GPT\Model.cs" />
     <Compile Include="Classes\custom_webclient.cs" />
     <Compile Include="Classes\Downloader.cs" />
     <Compile Include="Classes\info_manager.cs" />
@@ -97,6 +98,7 @@
     <Compile Include="Dialogs\add_cloud_Fragment.cs" />
     <Compile Include="Dialogs\delete_all_Fragment.cs" />
     <Compile Include="Dialogs\delete_cloud_Fragment.cs" />
+    <Compile Include="Fragments\Fragment_chatgpt.cs" />
     <Compile Include="Fragments\Fragment_cloud.cs" />
     <Compile Include="Fragments\Fragment_courses.cs" />
     <Compile Include="Fragments\Fragment_manage.cs" />
@@ -109,7 +111,7 @@
     <Compile Include="HelpFragments\Source_Help.cs" />
     <Compile Include="Adapters\html_css_adapter.cs" />
     <Compile Include="Adapters\data.cs" />
-    <Compile Include="MVVM\Main_Listeners.cs" />
+    <Compile Include="methods\Main_Listeners.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search_Fragments\Ai.cs" />
@@ -565,6 +567,14 @@
     <AndroidResource Include="Resources\layout\fragment_deleteall.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragment_chatgpt.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\image_18.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

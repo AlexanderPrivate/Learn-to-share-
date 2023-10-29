@@ -5,20 +5,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_centerHorizontal="true"
+        android:text="در بخش کلود میتونید داده های خود را ذخیره کنید!"
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <EditText
+        android:layout_below="@+id/textView1"
         android:textSize="13sp"
         android:background="@drawable/search_light_back"
-        android:layout_margin="20sp"
+        android:layout_margin="10sp"
         android:padding="10sp"
         android:hint="جستجو با عنوان ،کد و.."
-        android:id="@+id/editText1"
+        android:id="@+id/edit_search"
         android:layout_width="match_parent"
         android:layout_height="50.5dp"/>
 
 
     <ListView
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/edit_search"
         android:id="@+id/list_show"
         android:layout_above="@+id/fab"
         android:layout_width="match_parent"
@@ -34,8 +42,8 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/Delete"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="40sp"
-        android:layout_marginBottom="7sp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="2sp"
         app:cornerRadius="20sp"
         />
 
@@ -48,7 +56,7 @@
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         app:cornerRadius="20sp"
-        android:layout_marginRight="40sp"
+        android:layout_marginRight="30sp"
         android:layout_height="wrap_content" 
         />
 
@@ -56,7 +64,7 @@
         android:visibility="invisible"
         android:id="@+id/DeleteAll"
         android:text="حذف همه کلود ها"
-        android:layout_marginRight="40sp"
+        android:layout_marginRight="30sp"
         app:cornerRadius="20sp"
         android:layout_marginBottom="10sp"
         android:layout_width="wrap_content"
@@ -70,8 +78,8 @@
         android:tint="@android:color/white"
         android:src="@drawable/fab_icon"
         android:id="@+id/fab"
-        android:layout_marginRight="40sp"
-        android:layout_marginBottom="109.0dp"
+        android:layout_marginRight="30sp"
+        android:layout_marginBottom="100.0dp"
         android:layout_alignParentRight="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />

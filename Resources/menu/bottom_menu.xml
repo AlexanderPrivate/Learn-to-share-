@@ -6,20 +6,20 @@
 	android:icon="@drawable/diploma"
 	android:title="دوره ها"></item>
 
-	<item android:id="@+id/manager"
-	android:icon="@drawable/manager"
-	android:title="مدیریت"></item>
+	<item android:id="@+id/ChatGpt"
+	android:icon="@drawable/image_18"
+	android:title="Ai"></item>
 
 	<item android:id="@+id/setting"
 	android:icon="@drawable/setting"
 	android:title="تنظیمات"></item>
 
 	<item android:id="@+id/message"
-		android:icon="@drawable/message"
-		android:title="سازنده"></item>
+	android:icon="@drawable/message"
+	android:title="سازنده"></item>
 	
 	<item android:id="@+id/cloud"
-		android:icon="@drawable/cloud"
-		android:title="کلود"></item>
+	android:icon="@drawable/cloud"
+	android:title="کلود"></item>
 
 </menu>

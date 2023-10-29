@@ -5,18 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/linearLayout1"
-    android:alpha="0"
     android:orientation="vertical"
     >
-
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar1"
-        android:layoutDirection="rtl"
-        android:background="@drawable/toolbar_back"
-        app:title="پیام های مدیریت"
-        app:titleTextColor="@android:color/black"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"/>
 
     <ScrollView
         android:layout_width="match_parent"

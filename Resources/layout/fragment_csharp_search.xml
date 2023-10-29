@@ -120,7 +120,7 @@
                     android:layout_height="match_parent">
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/ModeCard3"
+                        android:id="@+id/ModeCard2"
                         app:cardCornerRadius="2dp"
                         android:layout_marginRight="0dp"
                         android:layout_centerVertical="true"
@@ -152,7 +152,7 @@
                     <TextView
                         android:textColor="@android:color/black"
                         android:textSize="12dp"
-                        android:id="@+id/textView34"
+                        android:id="@+id/textView4"
                         android:layout_width="193.0dp"
                         android:padding="3dp"
                         android:text=" یک چارچوب توسعه نرم‌افزار موبایل است که به توسعه‌دهندگان امکان می‌دهد با استفاده از زبان برنامه‌نویسی سی شارپ، برنامه‌های اندروید را توسعه دهند."

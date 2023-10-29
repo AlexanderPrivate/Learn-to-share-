@@ -30,7 +30,7 @@ namespace LearnToShare
         public static bool Dialog, Source_Open, Song_Open;
         CardView card_search;
         ImageView imageView_Search;
-        public static Chip Course_chip, Source_chip, Song_chip;
+        public static Chip Course_chip, Source_chip, Song_chip,Management_chip;
         RelativeLayout SearchBar_Relative;
         TextView textView_search;
         Google.Android.Material.BottomNavigation.BottomNavigationView bottomNavigationView;
@@ -89,12 +89,14 @@ namespace LearnToShare
             Course_chip = (Chip)FindViewById(Resource.Id.chip1);
             Source_chip = (Chip)FindViewById(Resource.Id.chip2);
             Song_chip = (Chip)FindViewById(Resource.Id.chip3);
+            Management_chip = (Chip)FindViewById(Resource.Id.chip4);
             textView_search = (TextView)FindViewById(Resource.Id.textView_search);
             SearchBar_Relative = (RelativeLayout)FindViewById(Resource.Id.SearchBar_Relative);
             card_search = (CardView)FindViewById(Resource.Id.cardView11);
             imageView_Search = (ImageView)FindViewById(Resource.Id.ImageSearch);
             view = FindViewById(Resource.Id.view1);
 
+            Management_chip.SetTypeface(IranSansFont, TypefaceStyle.Bold);
             Course_chip.SetTypeface(IranSansFont, TypefaceStyle.Bold);
             Source_chip.SetTypeface(IranSansFont, TypefaceStyle.Bold);
             Song_chip.SetTypeface(IranSansFont, TypefaceStyle.Bold);
@@ -174,16 +176,24 @@ namespace LearnToShare
             bottomNavigationView.SelectedItemId = Resource.Id.diploma;
 
             card_search.Click += Card_search_Click;
-
+            Management_chip.Click += Management_chip_Click;
             Course_chip.Click += Course_chip_Click;
             Source_chip.Click += Source_chip_Click;
             Song_chip.Click += Song_chip_Click;
         }
-
-
+        [Obsolete]
+        private void Management_chip_Click(object sender, EventArgs e)
+        {
+            Management_Chip_Select();
+            Fragment fragment = new Fragment_manage();
+            var transaction = FragmentManager.BeginTransaction();
+            transaction.Replace(Resource.Id.frameLayout1, fragment);
+            transaction.Commit();
+        }
 
         private void Chip_Light()
         {
+            Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
             Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
             Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
             Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
@@ -194,9 +204,11 @@ namespace LearnToShare
             Course_chip.SetTextColor(Color.White);
             Source_chip.SetTextColor(Color.White);
             Song_chip.SetTextColor(Color.White);
+            Management_chip.SetTextColor(Color.White);
             Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
             Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
             Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+            Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
         }
 
         [Obsolete]
@@ -272,9 +284,9 @@ namespace LearnToShare
                     SearchBar_Relative.Visibility = ViewStates.Visible;
                     fragment = new Fragment_courses();
                     break;
-                case Resource.Id.manager:
+                case Resource.Id.ChatGpt:
                     SearchBar_Relative.Visibility = ViewStates.Gone;
-                    fragment = new Fragment_manage();
+                    fragment = new Fragment_chatgpt();
                     break;
                 case Resource.Id.setting:
                     SearchBar_Relative.Visibility = ViewStates.Gone;
@@ -320,6 +332,7 @@ namespace LearnToShare
             {
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
 
             }
@@ -327,6 +340,7 @@ namespace LearnToShare
             {
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#363636"));
 
             }
@@ -335,8 +349,10 @@ namespace LearnToShare
                 Song_chip.SetTextColor(Color.White);
                 Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
             }
             else if (themes.ColorNumber == 3) // 3 ==     "حالت روز با خاکستری"
@@ -344,13 +360,16 @@ namespace LearnToShare
                 Song_chip.SetTextColor(Color.White);
                 Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#3E3E3E"));
             }
             else if (themes.ColorNumber == 4)  // 4 ==    "حالت شب با رنگ آپارات"
             {
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
 
@@ -360,8 +379,10 @@ namespace LearnToShare
                 Song_chip.SetTextColor(Color.White);
                 Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
             }
         }
@@ -371,6 +392,7 @@ namespace LearnToShare
             {
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
 
             }
@@ -378,6 +400,7 @@ namespace LearnToShare
             {
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#363636"));
 
             }
@@ -386,8 +409,10 @@ namespace LearnToShare
                 Source_chip.SetTextColor(Color.White);
                 Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
             }
             else if (themes.ColorNumber == 3) // 3 ==     "حالت روز با خاکستری"
@@ -395,14 +420,17 @@ namespace LearnToShare
                 Source_chip.SetTextColor(Color.White);
                 Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#3E3E3E"));
             }
             else if (themes.ColorNumber == 4)  // 4 ==    "حالت شب با رنگ آپارات"
             {
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
 
             }
@@ -411,8 +439,10 @@ namespace LearnToShare
                 Source_chip.SetTextColor(Color.White);
                 Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
             }
         }
@@ -422,6 +452,7 @@ namespace LearnToShare
             {
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
 
             }
@@ -429,6 +460,7 @@ namespace LearnToShare
             {
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#363636"));
 
             }
@@ -437,8 +469,10 @@ namespace LearnToShare
                 Course_chip.SetTextColor(Color.White);
                 Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
             }
             else if (themes.ColorNumber == 3) // 3 ==     "حالت روز با خاکستری"
@@ -446,14 +480,17 @@ namespace LearnToShare
                 Course_chip.SetTextColor(Color.White);
                 Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#3E3E3E"));
             }
             else if (themes.ColorNumber == 4)  // 4 ==    "حالت شب با رنگ آپارات"
             {
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
 
             }
@@ -462,9 +499,72 @@ namespace LearnToShare
                 Course_chip.SetTextColor(Color.White);
                 Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Management_chip.SetTextColor(Color.Rgb(30, 30, 30));
                 Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
                 Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
+            }
+        }
+
+        private static void Management_Chip_Select()
+        {
+            if (themes.ColorNumber == 0) // 0 ==   "حالت شب با رنگ آبی"
+            {
+                Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
+
+            }
+            else if (themes.ColorNumber == 1)  // 1 ==   "حالت شب با رنگ خاکستری" 
+            {
+                Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#363636"));
+
+            }
+            else if (themes.ColorNumber == 2)  // 2 ==    "حالت روز با رنگ آبی"
+            {
+                Management_chip.SetTextColor(Color.White);
+                Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#009dff"));
+            }
+            else if (themes.ColorNumber == 3) // 3 ==     "حالت روز با خاکستری"
+            {
+                Management_chip.SetTextColor(Color.White);
+                Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#3E3E3E"));
+            }
+            else if (themes.ColorNumber == 4)  // 4 ==    "حالت شب با رنگ آپارات"
+            {
+                Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.Rgb(5, 5, 5));
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
+
+            }
+            else if (themes.ColorNumber == 5) // 5 ==     "حالت روز با رنگ آپارات"
+            {
+                Management_chip.SetTextColor(Color.White);
+                Source_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Song_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Course_chip.SetTextColor(Color.Rgb(30, 30, 30));
+                Source_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Song_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Course_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.White);
+                Management_chip.ChipBackgroundColor = ColorStateList.ValueOf(Color.ParseColor("#ED145B"));
             }
         }
 
