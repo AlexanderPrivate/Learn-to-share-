@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="8" android:versionName="5.6.0" package="learn.windowsform.ir" android:installLocation="preferExternal">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="10" android:versionName="6.0.0" package="learn.windowsform.ir" android:installLocation="preferExternal">
 	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="33" />
 	<application android:allowBackup="true" android:label="Learn to share" android:supportsRtl="true" android:theme="@style/LightBlue" android:icon="@drawable/app_ico"></application>
 	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />

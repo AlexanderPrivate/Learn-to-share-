@@ -88,6 +88,10 @@
     <Compile Include="Adapters\java_script_adapter.cs" />
     <Compile Include="Adapters\xamarin_android_adapter.cs" />
     <Compile Include="Adapters\xamarin_form_adapter.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Chatgpt\Model.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Classes\custom_webclient.cs" />
     <Compile Include="Classes\Downloader.cs" />
     <Compile Include="Classes\info_manager.cs" />
@@ -109,7 +113,11 @@
     <Compile Include="HelpFragments\Source_Help.cs" />
     <Compile Include="Adapters\html_css_adapter.cs" />
     <Compile Include="Adapters\data.cs" />
+<<<<<<< Updated upstream
     <Compile Include="MVVM\Main_Listeners.cs" />
+=======
+    <Compile Include="Methods\Main_Listeners.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search_Fragments\Ai.cs" />
@@ -131,6 +139,7 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\font\iransans.ttf" />
+    <AndroidResource Include="Resources\font\englishfont.ttf" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\activity_main.xml">
@@ -162,6 +171,9 @@
     <AndroidResource Include="Resources\drawable\bottom_gray.xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.8.116</Version>
     </PackageReference>
@@ -566,6 +578,32 @@
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
+<<<<<<< Updated upstream
+=======
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\fragment_chatgpt.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\image_18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\user_blue.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\bot_message_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\user_red.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\user_gray_light.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\user_gray_dark.xml" />
+  </ItemGroup>
+>>>>>>> Stashed changes
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
     Other similar extension points exist, see Microsoft.Common.targets.

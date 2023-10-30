@@ -30,10 +30,14 @@ namespace LearnToShare
         public static bool Dialog, Source_Open, Song_Open;
         CardView card_search;
         ImageView imageView_Search;
+<<<<<<< Updated upstream
         public static Chip Course_chip, Source_chip, Song_chip;
+=======
+        public static Chip Course_chip, Source_chip, Song_chip, Management_chip;
+>>>>>>> Stashed changes
         RelativeLayout SearchBar_Relative;
         TextView textView_search;
-        Google.Android.Material.BottomNavigation.BottomNavigationView bottomNavigationView;
+        public static Google.Android.Material.BottomNavigation.BottomNavigationView bottomNavigationView;
         View view;
 
         [Obsolete]
@@ -202,7 +206,7 @@ namespace LearnToShare
         [Obsolete]
         private void Song_chip_Click(object sender, EventArgs e)
         {
-                bottomNavigationView.Visibility = ViewStates.Visible;
+            bottomNavigationView.Visibility = ViewStates.Visible;
             Song_Chip_Select();
             if (Song_Open)
             {
@@ -272,7 +276,12 @@ namespace LearnToShare
                     SearchBar_Relative.Visibility = ViewStates.Visible;
                     fragment = new Fragment_courses();
                     break;
+<<<<<<< Updated upstream
                 case Resource.Id.manager:
+=======
+                case Resource.Id.ChatGpt:
+                    bottomNavigationView.Visibility = ViewStates.Invisible;
+>>>>>>> Stashed changes
                     SearchBar_Relative.Visibility = ViewStates.Gone;
                     fragment = new Fragment_manage();
                     break;
@@ -298,13 +307,21 @@ namespace LearnToShare
         [Obsolete]
         public override bool OnKeyDown(Keycode keyCode, KeyEvent e)
         {
-            if (keyCode == Keycode.Back && Fragment_sources.web.CanGoBack())
+            FrameLayout frame = (FrameLayout)FindViewById(Resource.Id.frameLayout1);
+
+            if (keyCode == Keycode.Back && Fragment_sources.web != null && Fragment_sources.web.CanGoBack())
             {
                 Fragment_sources.web.GoBack();
 
                 return true;
             }
+            else if (keyCode == Keycode.Back && frame.IndexOfChild(Fragment_chatgpt.This_View) > -1)
+            {
+                bottomNavigationView.Visibility = ViewStates.Visible;
+                bottomNavigationView.SelectedItemId = Resource.Id.diploma;
 
+                return true;
+            }
             return base.OnKeyDown(keyCode, e);
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
