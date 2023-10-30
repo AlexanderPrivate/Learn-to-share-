@@ -30,15 +30,9 @@ namespace LearnToShare
         public static bool Dialog, Source_Open, Song_Open;
         CardView card_search;
         ImageView imageView_Search;
-<<<<<<< HEAD
+
         public static Chip Course_chip, Source_chip, Song_chip,Management_chip;
-=======
-<<<<<<< Updated upstream
-        public static Chip Course_chip, Source_chip, Song_chip;
-=======
-        public static Chip Course_chip, Source_chip, Song_chip, Management_chip;
->>>>>>> Stashed changes
->>>>>>> FixDataBase
+
         RelativeLayout SearchBar_Relative;
         TextView textView_search;
         public static Google.Android.Material.BottomNavigation.BottomNavigationView bottomNavigationView;
@@ -292,16 +286,9 @@ namespace LearnToShare
                     SearchBar_Relative.Visibility = ViewStates.Visible;
                     fragment = new Fragment_courses();
                     break;
-<<<<<<< HEAD
-                case Resource.Id.ChatGpt:
-=======
-<<<<<<< Updated upstream
-                case Resource.Id.manager:
-=======
+
                 case Resource.Id.ChatGpt:
                     bottomNavigationView.Visibility = ViewStates.Invisible;
->>>>>>> Stashed changes
->>>>>>> FixDataBase
                     SearchBar_Relative.Visibility = ViewStates.Gone;
                     fragment = new Fragment_chatgpt();
                     break;
