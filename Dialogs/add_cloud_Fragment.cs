@@ -43,6 +43,8 @@ namespace LearnToShare.Dialogs
                 relative.SetBackgroundColor(Color.Rgb(30,30,30));
                 Des.SetHintTextColor(Color.Rgb(235, 235, 235));
                 Title.SetHintTextColor(Color.Rgb(235, 235, 235));
+                Des.SetTextColor(Color.White);
+                Title.SetTextColor(Color.White);
             }
   
 

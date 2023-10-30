@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Drawing2D;
 using System.IO;
 using Android.App;
 using Android.Content.Res;
@@ -26,11 +27,16 @@ namespace LearnToShare.Fragments
         private string _Path = System.IO.Path.Combine(FileSystem.AppDataDirectory, "Cloud.db3");
         EditText SearchBox;
         TextView title;
+        RelativeLayout relative;
 
         [Obsolete]
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             This_View = inflater.Inflate(Resource.Layout.fragment_cloud, container, false);
+
+            relative = (RelativeLayout)This_View.FindViewById(Resource.Id.relativeLayout1);
+
+            relative.Animate().Alpha(1f).SetDuration(600).Start();
 
             floatingAction = (FloatingActionButton)This_View.FindViewById(Resource.Id.fab);
 
@@ -103,7 +109,7 @@ namespace LearnToShare.Fragments
             floatingAction.PerformClick();
             DialogFragment delete_cloud = new Dialogs.delete_all_Fragment();
             var Transaction = FragmentManager.BeginTransaction();
-            delete_cloud.Cancelable = false;
+            delete_cloud.Cancelable = true;
             delete_cloud.Show(Transaction, "Delete All");
         }
         private void Button_Delete_Click(object sender, EventArgs e)
@@ -111,7 +117,7 @@ namespace LearnToShare.Fragments
             floatingAction.PerformClick();
             DialogFragment delete_cloud = new Dialogs.delete_cloud_Fragment();
             var Transaction = FragmentManager.BeginTransaction();
-            delete_cloud.Cancelable = false;
+            delete_cloud.Cancelable = true;
             delete_cloud.Show(Transaction, "Add Cloud");
         }
 
@@ -120,7 +126,7 @@ namespace LearnToShare.Fragments
             floatingAction.PerformClick();
             DialogFragment add_cloud = new Dialogs.add_cloud_Fragment();
             var Transaction = FragmentManager.BeginTransaction();
-            add_cloud.Cancelable = false;
+            add_cloud.Cancelable = true;
             add_cloud.Show(Transaction, "Add Cloud");
         }
 
