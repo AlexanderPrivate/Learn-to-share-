@@ -1,9 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-  
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
-</LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:fontFamily="@font/englishfont"
+                android:textSize="22sp"
+                android:text="CHAT GPT"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="9.0dp" />
+
+            <ImageButton
+                android:id="@+id/imageButton1"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="0.0dp"
+                android:layout_alignParentLeft="true"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/back_icon_light"
+                android:layout_width="61.5dp"
+                android:layout_height="54.0dp"
+                android:layout_marginLeft="5.0dp" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_marginBottom="100sp"
+        android:layout_below="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:padding="5sp"
+            android:id="@+id/chatRoom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:ignore="UselessLeaf"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5.0dp">
+
+        <EditText
+            android:imeOptions="actionNext"
+            android:isScrollContainer="true"
+            android:padding="10sp"
+            android:background="@drawable/search_light_back"
+            android:id="@+id/editText1"
+            android:hint="پیامی بنویسید..."
+            android:layout_toLeftOf="@+id/send_button"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="59.0dp"
+            android:layout_marginBottom="15.5dp"
+            android:inputType="text" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            app:borderWidth="0sp"
+            android:src="@drawable/message"
+            android:tint="#F4F4F4"
+            android:id="@+id/send_button"
+            app:fabCustomSize="60sp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12.5dp"
+            android:layout_marginBottom="16.0dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
